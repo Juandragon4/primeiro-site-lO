@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+  <div class="wrapper">
+  <Div class="container">    
+    <div class="carousel">
+        <img src="img1.jpg" alt="Imagem 1" class="carousel-image">
+        <img src="img2.jpg" alt="Imagem 2" class="carousel-image">
+        <img src="img3.jpg" alt="Imagem 3" class="carousel-image">
+    </div>      
+   </div>
+
+   <div class="texto-abaixo">
+   <p>"Quero você mesmo sabendo que os teus abraços<br>
+   a mais de mil passos estão daqui"</p>
+   <P class="dist">Eu te amo meu amor e quero você todos os dias mesmo<br> sabendo que você
+   esta a bem mais de mil passos de mim</P>
+   </div>
+ 
+   <script src="script.js"></script>
+
+<audio id="player" autoplay loop muted>
+    <source src="gostassemo.mp3" type="audio/mp3">
+</audio>
+
+<button id="ativarSom"><strong>ativar som</strong></button>
+
+<script>
+  document.getElementById('ativarSom').addEventListener('click', function() {
+      const player = document.getElementById('player');
+      player.muted = false;
+      player.play();
+  }); 
+</script>
+</div>
+</body>
+</html>

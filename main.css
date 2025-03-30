@@ -1,0 +1,98 @@
+.botao{
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura total da tela */
+}
+button {
+    background-color: red;  /* Fundo vermelho */
+    color: black;  /* Texto preto */
+    border: none;  /* Remove a borda */
+    padding: 10px 20px;  /* Espaçamento interno */
+    font-size: 10px;  /* Tamanho da fonte */
+    border-radius: 8px;  /* Cantos arredondados */
+    cursor: pointer;  /* Muda o cursor ao passar */
+    transition: 0.3s;  /* Efeito suave */
+  }
+button:hover {
+    background-color: rgb(189, 23, 23);  /* Fica vermelho escuro ao passar o mouse */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
+  width: 300px; /* Largura do retângulo */
+  height: 400px; /* Altura do retângulo */
+  overflow: hidden; /* Esconde imagens que saem do contêiner */
+  position: relative;
+  border-radius: 20px; /* Bordas arredondadas */
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column; /* Coloca as imagens em coluna */
+  height: 100%;
+  transition: transform 1s ease; /* Animação suave para a transição entre imagens */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que as imagens não distorçam */
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.heart {
+  position: absolute;
+  font-size: 30px;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+  }
+}
+
+/* Centraliza o wrapper (pai do carrossel e do texto) */
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa a tela toda */
+}
+
+/* Ajusta a posição do texto */
+.texto-abaixo {
+  color: white; /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 16px; /* Espaço entre o retângulo e o texto */
+  margin-bottom: 30px;
+}
+.dist{
+  margin-top: 15px;
+}
